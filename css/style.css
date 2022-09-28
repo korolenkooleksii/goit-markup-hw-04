@@ -421,19 +421,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.social-icon {
   fill: var(--primary-brd-color);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-}
-
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
   fill: var(--primary-white-color);
 }
 
