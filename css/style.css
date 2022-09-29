@@ -155,24 +155,14 @@ body {
   color: var(--secondary-text-color);
 }
 
-.link.mobile {
-  display: flex;
-  align-items: center;
+.nav-contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .nav-contacts-item .link:hover,
 .nav-contacts-item .link:focus {
   color: var(--accent-color);
-}
-
-.nav-contacts-icon {
-  margin-right: 10px;
-  fill: var(--secondary-text-color);
-}
-
-.link:hover .nav-contacts-icon,
-.link:focus .nav-contacts-icon {
-  fill: var(--accent-color);
 }
 
 /* ------- HERO ------- */
@@ -265,6 +255,7 @@ body {
   align-items: center;
   display: flex;
   height: 120px;
+  width: 100%;
   margin-bottom: 30px;
   background: var(--primary-bgr-color);
   border-radius: 4px;
@@ -373,13 +364,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--primary-brd-color);
+  color: var(--primary-brd-color);
+}
+
+.social-icon {
+  fill: currentColor;
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 
 /* ------------ CLIENTS ----------------*/
@@ -411,20 +406,18 @@ body {
   height: 92px;
   border: 1px solid var(--primary-brd-color);
   border-radius: 4px;
+
+  color: var(--primary-brd-color);
 }
 
 .clients-icon {
-  fill: var(--primary-brd-color);
+  fill: currentColor;
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color);
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* ------------- FILTERS ------------ */
@@ -474,6 +467,10 @@ body {
   flex-basis: calc((100% - 60px) / 3);
 
   background: var(--primary-white-color);
+}
+
+.portfolio-link {
+  width: 100%;
 }
 
 .portfolio-list-item:hover,
@@ -595,10 +592,11 @@ body {
   width: 44px;
 
   background-color: var(--footer-bgr-social-link-color);
+  color: var(--primary-white-color);
 }
 
 .footer-social-icon {
-  fill: var(--primary-white-color);
+  fill: currentColor;
 }
 
 .footer-social-link:hover,
